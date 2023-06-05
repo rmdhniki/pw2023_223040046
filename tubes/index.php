@@ -35,7 +35,7 @@ $packages = getPackageLimit();
         <div class="collapse navbar-collapse" id="mynavbar">
           <ul class="navbar-nav me-auto ps-3">
             <li class="nav-item">
-              <a class="nav-link active" href="#">Home</a>
+              <a class="nav-link active" href="#home">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#packages">Packages</a>
@@ -63,12 +63,12 @@ $packages = getPackageLimit();
     <!-- Navbar End -->
 
     <!-- Home Section Start -->
-    <div class="home">
+    <div class="home" id="home">
       <div class="content">
         <h5>Welcome To Cianjur</h5>
         <h1>Visit <span class="changecontent"></span></h1>
         <h4>Berbahagia lah di Kota kecil penuh kenangan!.</h4>
-        <a href="#book">Book Place</a>
+        <a href="./login.php">Book Place</a>
       </div>
     </div>
     <!-- Home Section End -->
@@ -170,7 +170,7 @@ $packages = getPackageLimit();
               <i class="fas fa-car"></i>
               <div class="card-body">
                 <h3>Fastest Travel</h3>
-                <p>Dijamin waktu liburan anda tidak akan terbuang sia-sia!.</p>
+                <p>Dijamin waktu liburan takkan terbuang sia-sia!.</p>
               </div>
             </div>
           </div>
@@ -229,23 +229,6 @@ $packages = getPackageLimit();
               <img src="./images/gg.jpeg" alt="" height="230px" />
             </div>
           </div>
-          
-          <div class="row" style="margin-top: 30px">
-          <div class="col-md-4 py-3 py-md-0">
-            <div class="card">
-              <img src="./images/istanap.jpg" alt="" height="230px" />
-            </div>
-          </div>
-          <div class="col-md-4 py-3 py-md-0">
-            <div class="card">
-              <img src="./images/jy.jpg" alt="" height="230px" />
-            </div>
-          </div>
-          <div class="col-md-4 py-3 py-md-0">
-            <div class="card">
-              <img src="./images/gg.jpeg" alt="" height="230px" />
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -272,7 +255,6 @@ $packages = getPackageLimit();
               dengan adanya web ini para pelanggan dapat dengan mudah berkeliling Cianjur dengan sangan aman, nyaman dan praktis.
               oleh karena itu ayo bergabung bersama kami dengan berlibur di kota kecil penuh kebahagiaan ini!.
             </p>
-            <button id="about-btn">Read More...</button>
           </div>
         </div>
       </div>

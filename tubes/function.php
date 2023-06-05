@@ -118,6 +118,7 @@ function getPackageLimit() {
     return $records;
 }
 
+// live search packages
 function getFilterPackages($keyword) {
     $conn = connectDB();
     
@@ -131,7 +132,7 @@ function getFilterPackages($keyword) {
     
     return $records;
 }
-
+// status pembayaran user
 function getBookingUser($id) {
     $conn = connectDB();
 
@@ -164,7 +165,7 @@ function getBookingUser($id) {
   
     $conn->close();
 }
-
+// notif verivikasi admin
 function getBookingAdmin() {
     $conn = connectDB();
 
@@ -220,7 +221,7 @@ function getBookingDetail($id) {
   
     $conn->close();
 }
-
+// notif pembayaran user
 function getPaymentUser($id) {
     $conn = connectDB();
 
@@ -254,7 +255,7 @@ function getPaymentUser($id) {
   
     $conn->close();
 }
-
+// status pembayaran admin
 function getPaymentAdmin() {
     $conn = connectDB();
 
@@ -289,7 +290,7 @@ function getPaymentAdmin() {
   
     $conn->close();
 }
-
+// detail pembayaran user di admin
 function getPaymentDetailAdmin($id) {
     $conn = connectDB();
 
