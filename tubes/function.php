@@ -2,16 +2,16 @@
 
 session_start();
 
-const BASE_URL          = '/pw2023_223040046/tubes';
+const BASE_URL          = 'http://visitcianjur-travel.rf.gd/';
 const APP_NAME          = 'Travel Website';
 const ACCOUNT_NUMBER    = '223040046';
 const ACCOUNT_NAME      = 'A.N Muhammad Rifki Ramadhani';
 
 
 function connectDB() {
-    $host     = "localhost"; 
-    $username = "root"; 
-    $password = ""; 
+    $host     = "sql101.infinityfree.com"; 
+    $username = "if0_34401864"; 
+    $password = "rmVk9g03rz"; 
     $database = "223040046_tubes"; 
     
     $conn = mysqli_connect($host, $username, $password, $database);
