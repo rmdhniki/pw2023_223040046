@@ -3,8 +3,8 @@ require('function.php');
 
 if(isset($_GET['keyword'])){
     $keyword = $_GET['keyword'];
-
-    $packages = getFilterPackages($keyword);
+// search packages
+    $packages = getFilterPackages($keyword); 
 }
 ?>
 

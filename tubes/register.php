@@ -1,13 +1,13 @@
 <?php
 require('function.php');
-
+// ngecek sesi yg login
 if(isset($_SESSION['user']) && $_SESSION['user']['Admin']) header("Location: admin/dashboard.php");
 if(isset($_SESSION['user']) && $_SESSION['user']['Pengguna']) header("Location: user/dashboard.php");
 
 $title = 'Register';
 
 if (isset($_POST['submit'])) {
-    $fullName = stripslashes(strip_tags(htmlspecialchars($_POST['full_name'], ENT_QUOTES)));
+    $fullName = stripslashes(strip_tags(htmlspecialchars($_POST['full_name'], ENT_QUOTES))); 
     $username = stripslashes(strip_tags(htmlspecialchars($_POST['username'], ENT_QUOTES)));
     $phone_number = stripslashes(strip_tags(htmlspecialchars($_POST['phone_number'], ENT_QUOTES)));
     $password = stripslashes(strip_tags(htmlspecialchars($_POST['password'], ENT_QUOTES)));
@@ -17,7 +17,7 @@ if (isset($_POST['submit'])) {
 
     $sql = "SELECT * FROM `users` WHERE `username` = '{$username}'";
     $query = mysqli_query($conn, $sql);
-
+    // ngecek
     if($query->num_rows == 0){
         if($password == $password_confirm) {
             

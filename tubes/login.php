@@ -1,7 +1,7 @@
 <?php
 
 require('function.php');
-
+// 
 if (!empty($_SESSION['user'])) {
     if($_SESSION['user']['level'] == 'Admin'){
         header('location:' . BASE_URL . '/admin/dashboard.php');
@@ -13,6 +13,7 @@ if (!empty($_SESSION['user'])) {
 $title = 'Login';
 
 if (isset($_POST['submit'])) {
+    // ngebersihin tag
     $username = stripslashes(strip_tags(htmlspecialchars($_POST['username'], ENT_QUOTES)));
     $password = stripslashes(strip_tags(htmlspecialchars($_POST['password'], ENT_QUOTES)));
     
@@ -20,7 +21,7 @@ if (isset($_POST['submit'])) {
     $sql = "SELECT * FROM `users` WHERE `username` = '{$username}'";
     $query = mysqli_query($conn, $sql);
     $user = mysqli_fetch_array($query);
-    
+    // ngebandingin  password 
     if($query->num_rows > 0) {
         if (password_verify($password, $user['password'])) {
             
@@ -61,7 +62,7 @@ if (isset($_POST['submit'])) {
         <link rel="stylesheet" href="./css/login.css" />
     </head>
     <body>
-        
+        <!-- cek -->
         <div class="center">
             <?php if(isset($_SESSION['alert'])) : ?>
             <div class="alert alert-<?=$_SESSION['alert']['type']?>" role="alert">

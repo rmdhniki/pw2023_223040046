@@ -44,7 +44,7 @@ $packages = getPackageLimit();
               <a class="nav-link" href="#services">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#gallary">Gallary</a>
+              <a class="nav-link" href="#gallery">Gallery</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
@@ -189,7 +189,7 @@ $packages = getPackageLimit();
     <!-- Section Services End -->
 
     <!-- Section Gallary Start -->
-    <section class="gallary" id="gallary">
+    <section class="gallary" id="gallery">
       <div class="container">
         <div class="main-txt">
           <h1><span>G</span>allary</h1>

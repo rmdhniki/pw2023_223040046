@@ -12,7 +12,10 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="row">
-                            <div class="col-6">Daftar Booking</div>
+                            <div class="col-6">Daftar Booking </div>
+                            <div class="col-6">
+                                <button type="" name="" onclick="window.print()">Print PDF</button>
+                        </div>  
                         </div>
                     </div>
 
@@ -100,6 +103,7 @@
                     <div class="card-header">
                         <div class="row">
                             <div class="col-6">Daftar Pembayaran</div>
+                            
                         </div>
                     </div>
 
